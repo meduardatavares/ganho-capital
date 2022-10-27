@@ -1,0 +1,5 @@
+;; auto-generated file
+;; By editing this file you can make the system skip certain migration.
+;; See README for more details
+[{:id 2, :_title "Add clj-kondo :config-paths config"}
+ {:id 5, :_title "Add nubank/codestyle"}]

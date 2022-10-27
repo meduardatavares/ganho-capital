@@ -1,0 +1,26 @@
+{
+  "version": "0",
+  "environment": "test",
+  "dev_port": 8829,
+  "primary_brokers": "127.0.0.1:9092",
+  "nu_private_ip": "127.0.0.1",
+  "swagger_api_key": "the nubank swagger api key",
+  "zk_primary": "localhost",
+  "kafka_replicas": 1,
+  "http_timeout": 30000,
+  "auth-bucket": "nu-auth",
+  "router": "linear-search",
+  "sentry-dsn": "https://bogus/1234",
+  "country": "br",
+  "prototype": "s0",
+  "kafka_topics": {
+    "all-tokens-revoked" : {"topic": "ALL-TOKENS-REVOKED", "group": "GANHO-CAPITAL-{{random}}", "direction": "consumer"},
+    "token-revoked"      : {"topic": "TOKEN-REVOKED",      "group": "GANHO-CAPITAL-{{random}}", "direction": "consumer"}
+  },
+  "services": {
+    "auth": "http://localhost:8014",
+    "ganho-capital": "http://localhost:8829"
+  },
+  "bookmarks": {
+  }
+}
